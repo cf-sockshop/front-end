@@ -8,7 +8,7 @@ applications:
   services:
   - dynatrace
   env:
-    DOMAIN: .apps.pcfeu.dev.dynatracelabs.com
+    DOMAIN: .cfapps.eu10.hana.ondemand.com
     DT_NODE_ID: APPNAME
     DT_CUSTOM_PROP: DEPLOYMENT_GRP_NAME=DTGRP DEPLOYMENT_COLOR=APPCOLOR
     DEPLOYMENT_GRP_NAME: DTGRP
