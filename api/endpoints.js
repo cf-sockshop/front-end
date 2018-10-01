@@ -1,10 +1,10 @@
-(function (){
+(function() {
   'use strict';
 
   var util = require('util');
 
   var domain = "";
-  process.argv.forEach(function (val, index, array) {
+  process.argv.forEach(function(val, index, array) {
     console.log("Paramater: " + val);
     var arg = val.split("=");
     if (arg.length > 1) {
@@ -24,14 +24,14 @@
   }
 
   module.exports = {
-    catalogueUrl:  util.format("http://catalogue%s", domain),
-    tagsUrl:       util.format("http://catalogue%s/tags", domain),
-    cartsUrl:      util.format("http://carts%s/carts", domain),
-    ordersUrl:     util.format("http://orders%s", domain),
-    customersUrl:  util.format("http://user%s/customers", domain),
-    addressUrl:    util.format("http://user%s/addresses", domain),
-    cardsUrl:      util.format("http://user%s/cards", domain),
-    loginUrl:      util.format("http://user%s/login", domain),
-    registerUrl:   util.format("http://user%s/register", domain),
+    catalogueUrl: util.format("https://catalogue%s", domain),
+    tagsUrl: util.format("https://catalogue%s/tags", domain),
+    cartsUrl: util.format("https://carts%s/carts", domain),
+    ordersUrl: util.format("https://orders%s", domain),
+    customersUrl: util.format("https://user%s/customers", domain),
+    addressUrl: util.format("https://user%s/addresses", domain),
+    cardsUrl: util.format("https://user%s/cards", domain),
+    loginUrl: util.format("https://user%s/login", domain),
+    registerUrl: util.format("https://user%s/register", domain),
   };
 }());
