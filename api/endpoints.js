@@ -22,11 +22,11 @@
       domain = process.env.DOMAIN;
     }
   }
-
+  //main-sockshop-carts-prod.cfapps.eu10.hana.ondemand.com
   module.exports = {
-    catalogueUrl: util.format("https://catalogue%s", domain),
-    tagsUrl: util.format("https://catalogue%s/tags", domain),
-    cartsUrl: util.format("https://carts%s/carts", domain),
+    catalogueUrl: util.format("https://main-sockshop-catalogue-prod%s", domain),
+    tagsUrl: util.format("https://main-sockshop-catalogue-prod%s/tags", domain),
+    cartsUrl: util.format("https://main-sockshop-carts-prod%s/carts", domain),
     ordersUrl: util.format("https://orders%s", domain),
     customersUrl: util.format("https://user%s/customers", domain),
     addressUrl: util.format("https://user%s/addresses", domain),
